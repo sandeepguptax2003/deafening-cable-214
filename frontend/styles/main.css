@@ -26,9 +26,7 @@ body {
 #right-side {
   width: 75%;
   height: 100vh;
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("./images/website-background/wp2039787.jpg");
 }
 /* right side of home page CSS ends */
 
@@ -133,60 +131,6 @@ body {
   margin-right: 10px;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-  margin-left: 10px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 24px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
-}
-
 /* Font Awesome Icons */
 .nav li:nth-child(1) i {
   margin-right: 10px;
@@ -201,15 +145,15 @@ input:checked + .slider:before {
 }
 
 .nav li:nth-child(2) i:before {
-  content: "\f186";
+  content: "\f188";
 }
 
-.nav li:nth-child(3) i {
+.nav li:nth-child(4) i {
   margin-right: 10px;
 }
 
-.nav li:nth-child(3) i:before {
-  content: "\f188";
+.nav li:nth-child(4) i:before {
+  content: "\f0c0";
 }
 
 /* hamburger menu CSS ends */
@@ -330,3 +274,110 @@ input:checked + .slider:before {
 }
 
 /* wrapper icon ends */
+
+/* New members adding form starts */
+
+.form-container {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-top: 160px;
+  margin-left: 250px;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-row label span {
+  color: red;
+}
+
+.form-row input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form-row input:focus {
+  box-shadow: 0 0px 2px rgba(231, 76, 60, 1) !important;
+}
+
+.form-actions {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#add-btn {
+  background-color: #ffffff;
+  color: #323232;
+  border: 1px solid #333;
+}
+
+#add-btn:hover {
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  background-color: #333;
+  color: #fff;
+}
+
+#cancel-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+#cancel-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+/* New members adding form ends */
+
+/* search chats css starts */
+
+#search-result {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* search chats css ends */
