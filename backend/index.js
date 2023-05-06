@@ -3,10 +3,10 @@ const app = express();
 require("dotenv").config();
 const http = require("http");
 const server = http.createServer(app);
-const { connection, client } = require("./configs/db");
+const { connection } = require("./configs/db");
 const io = require("socket.io")(server);
 
-const { userRoute } = require("./routes/user.route");
+const { userRouter } = require("./routes/user.route");
 app.use(express.json());
 
 //SOCKET LOGIC
@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 //ROUTES
 
-// app.use("/user", userRoute);
+ app.use("/user", userRouter);
 app.post("/addContact", async (req, res) => {
   try {
     const contact = req.body; // Get the contact object from the request body
