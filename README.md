@@ -3,4 +3,4 @@ BACK-END DEPLOYED LINK -
 https://jade-jealous-dhole.cyclic.app
 
 FRONT-END DEPLOYED LINK - 
-merry-starburst-7c9544.netlify.app
+https://merry-starburst-7c9544.netlify.app
