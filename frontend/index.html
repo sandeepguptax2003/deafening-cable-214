@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatMate</title>
+    <link
+      rel="shortcut icon"
+      href="./images/ChatMate.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div id="background">
+        <a href="index.html">
+          <div id="logo">
+            <img src="./images/ChatMate.png" alt="" />
+          </div>
+        </a>
+
+        <div id="con">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="login.html">Login</a>
+          <a href="login.html">Signup</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="main-section">
+      <div id="left-section"></div>
+      <div id="right-section">
+        <div id="back">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>
